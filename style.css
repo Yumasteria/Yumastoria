@@ -1,0 +1,130 @@
+*
+{
+    margin: auto;
+    padding:0;
+    box-sizing: border-box;
+    box-sizing: border-box;
+   
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+    min-height: 100vh;
+    background: #111;
+
+}
+
+h2 {
+    display: flex;
+    color: transparent;
+/*color transparent*/
+font-size: 7vw;
+font-family: 'Bad Script', cursive;
+}
+h2 span
+{
+    animation: animate 3s linear infinite;
+    animation-delay: calc(0.1s * var(--i));
+}
+@keyframes animate {
+    
+    0%
+    {
+        color: #3c00ff;
+        filter: blur(2px) hue-rotate(0deg) ;
+        text-shadow: 0 0 10px #00b3ff,
+        0 0 20px #00b3ff,
+        0 0 40px #00b3ff,
+        0 0 80px #00b3ff,
+        0 0 120px #00b3ff,
+        0 0 200px #00b3ff,
+        0 0 300px #00b3ff,
+        0 0 400px #ff0000,
+    }
+    30%,70%
+    {
+            color: #03eea4;
+            filter: blur(2px) hue-rotate(360deg);
+            text-shadow: 0 0 10px #00b3ff,
+            0 0 20px #00b3ff,
+            0 0 40px #00b3ff,
+            0 0 80px #00b3ff,
+            0 0 120px #00b3ff,
+            0 0 200px #5900ff,
+    }
+        100%
+        {
+            color: trasparent;
+            box-shadow: none;
+            filter: blur(2px) hue-rotate(0deg);
+        }
+    }   
+
+
+h4 {
+    display: flex;
+    color: transparent;
+/*color transparent*/
+font-size: 4vw;
+
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+h4 span
+{
+    animation: animate 3s linear infinite;
+    animation-delay: calc(0.1s * var(--i));
+}
+@keyframes animate {
+    
+    0%
+    {
+        color: #3c00ff;
+        filter: blur(2px) hue-rotate(0deg) ;
+        text-shadow: 0 0 10px #00b3ff,
+        0 0 20px #00b3ff,
+        0 0 40px #00b3ff,
+        0 0 80px #00b3ff,
+        0 0 120px #00b3ff,
+        0 0 200px #00b3ff,
+        0 0 300px #00b3ff,
+        0 0 400px #ff0000,
+    }
+    30%,70%
+    {
+            color: rgb(255, 238, 0);
+            filter: blur(2px) hue-rotate(360deg);
+            text-shadow: 0 0 10px #00b3ff,
+            0 0 20px #00b3ff,
+            0 0 40px #00b3ff,
+            0 0 80px #00b3ff,
+            0 0 120px #00b3ff,
+            0 0 200px #5900ff,
+    }
+        100%
+        {
+            color: trasparent;
+            box-shadow: none;
+            filter: blur(2px) hue-rotate(0deg);
+        }
+    }   
+
+.container{
+    height: 450px;
+    width: 450px;
+    box-shadow: 3px 3px 16px rgba(0,0,0,.7);
+    overflow: hidden;
+  
+}
+.images img{
+    height: 450px;
+    width: 450px;
+}
+.container.images {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+
+}
